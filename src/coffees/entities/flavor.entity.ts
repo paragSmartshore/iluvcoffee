@@ -10,6 +10,7 @@ export class Flavor {
   name: string;
 
   @ManyToMany(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     (type) => Coffee,
     (coffee) => coffee.flavors, // what is "flavor" within the Coffee Entity
   ) // 👈
